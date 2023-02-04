@@ -11,3 +11,18 @@ jobs:
         run: clang-format --dry-run --Werror src/*
       - name: "Clang check tests"
         run: clang-format --dry-run --Werror tests/*cpp
+  build_check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Install build requirements"
+        run: |
+          sudo apt-get install -y cmake
+          sudo apt-get install -y make
+          sudo apt-get install -y libboost-all-dev
+      - name: "Build code"
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make -j 4
