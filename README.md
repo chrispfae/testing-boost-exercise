@@ -1,4 +1,4 @@
-[![SSE CI/CD](https://github.com/chrispfae/testing-boost-exercise/tree/extend-tests/.github/workflows/cicd.yaml/badge.svg)](https://github.com/chrispfae/testing-boost-exercise/tree/extend-tests/.github/workflows/cicd.yaml)
+[![SSE CI/CD](https://github.com/chrispfae/testing-boost-exercise/.github/workflows/cicd.yaml/badge.svg?branch=extend-tests)](https://github.com/chrispfae/testing-boost-exercise/.github/workflows/cicd.yaml?branch=extend-tests)
 
 # SIDEMADE - Simple Dense Matrix Decomposition
 
