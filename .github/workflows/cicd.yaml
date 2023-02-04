@@ -9,3 +9,5 @@ jobs:
         run: sudo apt-get install -y clang-format
       - name: "Clang check src"
         run: clang-format --dry-run --Werror src/*
+      - name: "Clang check tests"
+        run: clang-format --dry-run --Werror tests/*cpp
