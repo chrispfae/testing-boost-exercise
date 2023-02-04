@@ -28,11 +28,6 @@ jobs:
           cd build
           cmake ..
           make -j 4
-  test_code:
-    needs: build_check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: "Test code"
         run: |
           cd tests
