@@ -8,6 +8,4 @@ jobs:
       - name: "Install clang-format"
         run: sudo apt-get install -y clang-format
       - name: "Clang check src"
-        run: |
-          clang-format src/Configuration.hpp > out.hpp
-          diff src/Configuration.hpp out.hpp
+        run: clang-format --dry-run --Werror src/*
