@@ -10,4 +10,4 @@ jobs:
       - name: "Clang check src"
         run: |
           clang-format src/Configuration.hpp > out.hpp
-          diff src/Configuration.hpp > out.hpp
+          diff src/Configuration.hpp out.hpp
