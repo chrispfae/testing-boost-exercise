@@ -28,7 +28,7 @@ jobs:
           cd build
           cmake ..
           make -j 4
-  testing:
+  test_code:
     needs: build_check
     runs-on: ubuntu-latest
     steps:
